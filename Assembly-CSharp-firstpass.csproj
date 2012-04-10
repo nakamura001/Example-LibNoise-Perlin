@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{8DE9BB5A-929D-C425-50B8-38E8948F65F1}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_0;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Standard Assets\Noise\Generator\Billow.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Generator\Checker.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Generator\Const.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Generator\Cylinders.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Generator\Perlin.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Generator\RidgedMultifractal.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Generator\Spheres.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Generator\Voronoi.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Gradient.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\ModuleBase.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Noise2D.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Abs.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Add.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Blend.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Cache.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Clamp.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Curve.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Displace.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Exponent.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Invert.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Max.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Min.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Multiply.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Power.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Rotate.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Scale.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\ScaleBias.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Select.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Subtract.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Terrace.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Translate.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Operator\Turbulence.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Standard Assets\Noise\Utils.cs" />
+     <None Include="Assets\Standard Assets\Noise\COPYING.txt" />
+     <None Include="Assets\Standard Assets\Noise\COPYING.LESSER.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
